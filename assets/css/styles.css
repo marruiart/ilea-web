@@ -131,7 +131,6 @@ nav {
 }
 
 header {
-    background-color: red;
     grid-row: 2;
     grid-column: span 4;
 }
@@ -206,10 +205,11 @@ header {
 .header__logo {
     overflow: hidden;
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     left: 0;
-    height: 4em;
-    width: 10em;
+    height: 3em;
+    width: 8em;
     z-index: 1;
 }
 
@@ -229,16 +229,16 @@ header {
     position: absolute;
     top: 0;
     right: 0;
-    height: 4rem;
-    width: 4rem;
+    height: 3rem;
+    width: 3rem;
     margin-right: 2%;
     z-index: 1;
 }
 
 .header__menu_icon img {
     position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
+    top: 60%;
+    transform: translateY(-50%);
     height: 60%;
 }
 
