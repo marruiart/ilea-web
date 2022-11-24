@@ -56,7 +56,7 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(6, auto);
     width: 100%;
     min-height: 100vh;
 }
@@ -151,7 +151,7 @@ header {
     gap: 3rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, auto);
+    grid-template-rows: repeat(8, auto);
     width: 100%;
     min-height: 100vh;
 }
@@ -187,9 +187,14 @@ section.contact {
     grid-column: span 4;
 }
 
+.waves {
+    grid-row: 7;
+    grid-column: span 4;
+}
+
 footer {
     background-color: white;
-    grid-row: 4;
+    grid-row: 8;
     grid-column: span 4;
 }
 
@@ -561,6 +566,28 @@ header {
 
 
 
+/*------------------------------------------ WAVES ------------------------------------------*/
+
+.waves {
+    position: relative;
+    height: 100px;
+    width: 100%;
+}
+
+.waves__wave--w1,
+.waves__wave--w2,
+.waves__wave--w3 {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    background-size: 1920px 100px;
+}
+
+.waves__wave--w1 {
+    background-image: url("../images/w1.svg");
+    background-position-x: 1391px;
+}
+
 /*------------------------------------------ FOOTER ------------------------------------------*/
 
 footer {
@@ -722,9 +749,72 @@ footer a:hover {
 
 @media only screen and (min-width: 1024px) {
 
+    .waves {
+        height: 168.5px;
+    }
+
+    .waves__wave--w1,
+    .waves__wave--w2,
+    .waves__wave--w3 {
+        height: 168.5px;
+        background-size: 1920px 168.5px;
+    }
+
+    .waves__wave--w1 {
+        animation: w1 30s linear infinite;
+        z-index: 3;
+    }
+
+    .waves__wave--w2 {
+        background-image: url("../images/w2.svg");
+        animation: w2 45s linear infinite;
+        z-index: 2;
+        bottom: 5px;
+    }
+
+    .waves__wave--w3 {
+        background-image: url("../images/w3.svg");
+        animation: w3 60s linear infinite;
+        z-index: 1;
+        bottom: 10px;
+    }
+
+    @keyframes w1 {
+        0% {
+            background-position-x: 1920px;
+        }
+
+        100% {
+            background-position-x: 0px;
+        }
+    }
+
+    @keyframes w2 {
+        0% {
+            background-position-x: 0px;
+        }
+
+        100% {
+            background-position-x: 1920px;
+        }
+    }
+
+    @keyframes w3 {
+        0% {
+            background-position-x: 1920px;
+        }
+
+        100% {
+            background-position-x: 0px;
+        }
+    }
+
+    /*------------------------------------------ FOOTER ------------------------------------------*/
+
     footer {
         font-size: 1rem;
     }
+
     .footer__legal {
         flex-direction: row;
         background-color: var(--neutro);
