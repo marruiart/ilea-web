@@ -967,9 +967,32 @@ footer a:hover {
     }
 
     /*------------------------------------------ FOOTER ------------------------------------------*/
-
+  
     footer {
         font-size: 1rem;
+    }
+
+    .footer__content__ubication {
+        gap: 1em;
+        font-size: 0.8rem;
+    }
+
+    .contact__wrap__reviews {
+        display: none;
+    }
+
+    .contact {
+        margin-bottom: 0;
+        padding: 0;
+        font-size: 0.8rem;
+    }
+
+    .form__field textarea, .form__field input {
+        padding: 1em;
+    }
+
+    .form__field textarea {
+        height: 5em;
     }
 
     .footer__legal {
@@ -1000,4 +1023,5 @@ footer a:hover {
     .footer__legal__attribution {
         width: 40%;
     }
+
 }
