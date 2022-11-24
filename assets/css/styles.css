@@ -627,8 +627,8 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50.4%;
     height: 100%;
+    width: 45%;
 }
 
 .reviews_dog {
@@ -641,7 +641,9 @@ header {
 .reviews_sign {
     background-color: #c2bbcc;
     height: 15rem;
-    margin: -0.8rem 10% 0 10%;
+    width: 100%;
+    min-width: 320px;
+    margin-top: -0.8rem;
     padding: 1.5rem 1.3em;
     border-radius: 5px;
     text-align: center;
@@ -649,7 +651,7 @@ header {
 
 fieldset {
     background-color: #fefefe;
-    width: 45%;
+    width: max(50%, 320px);
     padding: 1rem 1em;
     border: none;
     border-radius: 10px;
