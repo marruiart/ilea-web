@@ -835,6 +835,15 @@ footer a:hover {
     font-size: 2em;
 }
 
+.footer__social a {
+    min-width: 1.1em;
+    text-align: center;
+}
+
+.footer__social i:hover {
+    font-size: 1.1em;
+}
+
 /*-------- FOOTER LEGAL --------*/
 
 .footer__legal {
