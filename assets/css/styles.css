@@ -285,11 +285,43 @@ section.gallery {
 
 /*------------------------------------------ NAV MENU ------------------------------------------*/
 
-nav {
+.nav_menu {
     position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+
     display: none;
-    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 50vh;
+    width: 90%;
+    border-radius: 0 0 20px 20px;
+    background-color: #4a3961f5;
+    color: #fefefe;
+    font-size: 1.1em;
+    z-index: 1;
+}
+
+.nav_menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
     width: 100%;
+}
+
+.nav_menu a:hover {
+    background-color: var(--emphasis);
+    color: rgba(51, 51, 51, 0.87);
+    font-weight: bold;
+}
+
+.nav_menu a:last-child {
+    border-radius: 0 0 20px 20px;
 }
 
 /*------------------------------------------ HEADER ------------------------------------------*/
@@ -332,7 +364,7 @@ header {
     justify-content: space-evenly;
     height: 2.7rem;
     width: 3rem;
-    margin-right: 3%;
+    margin-right: 5%;
     border: 0;
     background: transparent;
     gap: .65rem;
@@ -384,7 +416,7 @@ header {
 .hero_section__wrap {
     position: relative;
     left: 50%;
-    top: 44%;
+    top: 40%;
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
