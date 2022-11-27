@@ -378,18 +378,6 @@ header {
     transform-origin: left;
 }
 
-/* .header__menu_icon:active div:first-child {
-    transform: rotate(45deg);
-}
-
-.header__menu_icon:active div:nth-child(2) {
-    opacity: 0;
-}
-
-.header__menu_icon:active div:last-child {
-    transform: rotate(-45deg);
-} */
-
 /*------------------------------------------ HERO SECTION ------------------------------------------*/
 
 .--hero {
@@ -400,7 +388,7 @@ header {
 }
 
 .hero_section {
-    height: 95vh;
+    height: 91vh;
     background-image: url(../images/header.jpg);
     background-size: cover;
     background-position: center;
@@ -433,6 +421,19 @@ header {
 }
 
 /*------------------------------------------ ABOUT ------------------------------------------*/
+
+.about::before {
+    content: '';
+    display: block;
+    background-image: url(../images/wave-header.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    height: 4rem;
+    width: 100%;
+    margin: -7rem 0 3rem 0;
+    z-index: 5;
+}
 
 .about__wrap {
     position: relative;
