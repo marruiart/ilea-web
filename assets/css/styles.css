@@ -333,16 +333,16 @@ header {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 0;
-    height: 3em;
-    width: 8em;
+    left: 7%;
+    height: 2.3em;
+    width: 6em;
     z-index: 1;
 }
 
 .header__logo img {
     position: absolute;
     top: 66%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
     width: 100%;
     height: cover;
@@ -352,24 +352,24 @@ header {
 
 .header__menu_icon {
     position: absolute;
-    top: 0.7rem;
+    top: 1.2rem;
     right: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 2.7rem;
-    width: 3rem;
-    margin-right: 5%;
+    height: 1.5rem;
+    width: 2rem;
+    margin-right: 7%;
     border: 0;
     background: transparent;
-    gap: .65rem;
+    gap: .6rem;
 }
 
 .header__menu_icon>div {
     background-color: #fefefe;
     height: 0.4em;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: all .5s;
     transform-origin: left;
 }
