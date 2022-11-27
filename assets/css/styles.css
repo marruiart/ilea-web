@@ -161,7 +161,6 @@ p {
     transition: all .4s ease-in-out;
 }
 
-
 .--button:hover, .--button:active {
     background-position: 100% 0;
     -o-transition: all .4s ease-in-out;
@@ -379,7 +378,7 @@ header {
     transform-origin: left;
 }
 
-.header__menu_icon:active div:first-child {
+/* .header__menu_icon:active div:first-child {
     transform: rotate(45deg);
 }
 
@@ -389,7 +388,7 @@ header {
 
 .header__menu_icon:active div:last-child {
     transform: rotate(-45deg);
-}
+} */
 
 /*------------------------------------------ HERO SECTION ------------------------------------------*/
 
