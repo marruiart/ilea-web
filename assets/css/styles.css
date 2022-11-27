@@ -105,13 +105,6 @@ body {
     text-transform: uppercase;
 }
 
-.--hero {
-    font-family: 'Hero', cursive;
-    font-size: 4rem;
-    font-weight: lighter;
-    line-height: 6rem;
-}
-
 p {
     max-width: 75ch;
     font-size: 1em;
@@ -368,6 +361,13 @@ header {
 
 /*------------------------------------------ HERO SECTION ------------------------------------------*/
 
+.--hero {
+    font-family: 'Hero', cursive;
+    font-size:2.8rem;
+    font-weight: lighter;
+    line-height: 4rem;
+}
+
 .hero_section {
     height: 95vh;
     background-image: url(../images/header.jpg);
@@ -384,13 +384,13 @@ header {
 .hero_section__wrap {
     position: relative;
     left: 50%;
-    top: 45%;
+    top: 44%;
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 2rem;
     width: 90%;
     text-align: center;
     max-width: 70ch;
@@ -398,7 +398,7 @@ header {
 }
 
 .hero_section__wrap p {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 /*------------------------------------------ ABOUT ------------------------------------------*/
@@ -999,6 +999,21 @@ footer a:hover {
         grid-column: span 8;
         /**/
     }
+
+/*------------------------------------------ HERO SECTION ------------------------------------------*/
+
+.--hero {
+    font-size: 4rem; /**/
+    line-height: 6rem; /**/
+}
+
+.hero_section__wrap {
+    gap: 3rem; /**/
+}
+
+.hero_section__wrap p {
+    font-size: 1.2rem; /**/
+}
 
     /*------------------------------------------ FOOTER ------------------------------------------*/
 
