@@ -5,7 +5,6 @@ html {
 }
 
 * {
-    /* border: 1px solid red; */
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -22,7 +21,7 @@ html {
 
 @font-face {
     font-family: 'Hero';
-    src: url("../fonts/Pacifico-Regular.ttf");
+    src: url("../fonts/Comfortaa-VariableFont_wght.ttf");
 }
 
 @font-face {
@@ -116,6 +115,7 @@ p {
     background-color: rgba(240, 240, 240, 0.26);
     height: 3em;
     width: max(15em, 10%);
+    margin-top: 1em;
     border: 1px solid #fefefe;
     border-radius: 50px;
     color: #fefefe;
@@ -126,15 +126,11 @@ p {
     touch-action: manipulation;
 }
 
-.--hero_button:active,
-.--hero_button:hover {
-    outline: 0;
-}
-
 .--hero_button:hover {
     background-color: #fefefe;
     border-color: rgba(0, 0, 0, 0.19);
     color: var(--dark);
+    outline: 0;
 }
 
 .--button {
@@ -334,6 +330,7 @@ header {
     top: 50%;
     transform: translateY(-50%);
     left: 7%;
+    left: min(7%, 2.5em);
     height: 2.3em;
     width: 6em;
     z-index: 1;
@@ -344,8 +341,8 @@ header {
     top: 66%;
     left: 40%;
     transform: translate(-50%, -50%);
+    height: auto;
     width: 100%;
-    height: cover;
     /* border: 0.75em solid white; */
     /* box-shadow: 0 0 2px rgb(112 86 147 / 50%); */
 }
@@ -378,16 +375,18 @@ header {
 
 .--hero {
     font-family: 'Hero', cursive;
-    font-size: 2.8rem;
-    font-weight: lighter;
-    line-height: 4rem;
+    font-size: 2.3rem;
+    font-weight:normal;
+    line-height: 3.5rem;
 }
 
 .hero_section {
     height: 91vh;
+    min-height: 540px;
     background-image: url(../images/header.jpg);
     background-size: cover;
     background-position: center;
+    font-size: 2.3rem;
 }
 
 .hero_section__color {
@@ -405,7 +404,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.5rem;
     width: 90%;
     text-align: center;
     max-width: 70ch;
@@ -414,6 +413,7 @@ header {
 
 .hero_section__wrap p {
     font-size: 1rem;
+    max-width: 60ch;
 }
 
 /*------------------------------------------ ABOUT ------------------------------------------*/
@@ -1014,12 +1014,13 @@ footer a:hover {
     /*------------------------------------------ HERO SECTION ------------------------------------------*/
 
     .--hero {
-        font-size: 4rem; /**/
-        line-height: 6rem; /**/
+        font-size: 3rem; /**/
+        line-height: 4rem; /**/
     }
 
     .hero_section__wrap {
-        gap: 3rem; /**/
+        top: 45%; /**/
+        gap: 2.5rem; /**/
     }
 
     .hero_section__wrap p {
