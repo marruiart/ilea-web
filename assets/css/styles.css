@@ -376,7 +376,7 @@ header {
 .--hero {
     font-family: 'Hero', cursive;
     font-size: 2.3rem;
-    font-weight:normal;
+    font-weight: normal;
     line-height: 3.5rem;
 }
 
@@ -1092,7 +1092,7 @@ footer a:hover {
     /* MAIN SECTIONS */
 
     section.hero_section {
-        display:flex; /**/
+        display: flex; /**/
         justify-content: space-between; /**/
         grid-row: 1;
         grid-column: span 12; /**/
@@ -1128,9 +1128,9 @@ footer a:hover {
         flex-basis: 50%; /**/
     }
 
-    .hero_section__wrap p, .--hero {
-        width: 85%;
-        /* margin-right: 17px; */
+    .hero_section__wrap p,
+    .--hero {
+        width: 85%; /* margin-right: 17px; */
     }
 
     /* FOOTER SECTIONS */
@@ -1189,7 +1189,7 @@ footer a:hover {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        left: 0;
+        left: 5%;
         height: 3em;
         width: 8em;
         z-index: 1;
@@ -1260,6 +1260,7 @@ footer a:hover {
     /*------------------------------------------ HERO SECTION ------------------------------------------*/
 
     .--hero {
+        width: 85%;
         font-family: 'Hero', cursive;
         font-size: 2.8rem;
         font-weight: lighter;
@@ -1282,7 +1283,7 @@ footer a:hover {
 
     .hero_section__wrap {
         position: relative;
-        left: 10%;/**/
+        left: 10%; /**/
         top: 45%; /**/
         transform: translateY(-50%); /**/
         display: flex;
@@ -1614,9 +1615,18 @@ footer a:hover {
 @media only screen and (min-width: 1440px) {
     /*------------------------------------------ GRID LAYOUT ------------------------------------------*/
 
+
     /* WRAPPER SECTIONS */
 
     .wrapper footer {
         grid-template-columns: 15% repeat(10, 1fr) 15%;
     }
+}
+
+@media only screen and (min-width: 1600px) {
+        /*------------------------------------------ HERO SECTION ------------------------------------------*/
+
+        .hero_section__wrap {
+            left: 25%; /**/
+        }
 }
