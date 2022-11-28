@@ -1044,7 +1044,7 @@ footer a:hover {
     .footer__social {
         justify-content: space-evenly; /**/
         padding: 0 3rem; /**/
-        font-size: 2.5em; /**/
+        font-size: 2.4em; /**/
     }
 
     /*-------- FOOTER LEGAL --------*/
@@ -1130,7 +1130,7 @@ footer a:hover {
 
     .hero_section__wrap p,
     .--hero {
-        width: 85%; /* margin-right: 17px; */
+        width: 85%; 
     }
 
     /* FOOTER SECTIONS */
@@ -1629,4 +1629,52 @@ footer a:hover {
         .hero_section__wrap {
             left: 25%; /**/
         }
+}
+
+@media only screen and (min-width: 2000px) {
+        /* MAIN SECTIONS */
+
+        section.hero_section {
+            display: grid; /**/
+            grid-template-columns: repeat(12, 1fr); /**/
+            grid-template-rows: repeat(5, auto);
+
+            grid-row: 1;
+            grid-column: span 12; /**/
+        }
+    
+        section.about {
+            grid-row: 2;
+            grid-column: span 12; 
+        }
+    
+        section.services {
+            grid-row: 3;
+            grid-column: span 12; 
+        }
+    
+        section.team {
+            grid-row: 4;
+            grid-column: span 12; 
+        }
+    
+        section.gallery {
+            grid-row: 5;
+            grid-column: span 12; 
+        }
+    
+        /* HERO SECTIONS */
+    
+        .hero_section__color {
+            flex-basis: 61.2%; 
+        }
+    
+        .hero_section__imgwrap {
+            flex-basis: 50%; 
+        }
+    
+        .hero_section__wrap p,
+        .--hero {
+            width: 85%;
+        }    
 }
