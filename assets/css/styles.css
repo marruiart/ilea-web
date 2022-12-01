@@ -438,8 +438,8 @@ header {
     text-align: center;
 }
 
-.about__wrap img {
-    display: none;
+.about__wrap p {
+    margin: 0 auto;
 }
 
 /*------------------------------------------ SERVICES ------------------------------------------*/
@@ -1406,10 +1406,6 @@ footer a:hover {
         width: 90%;
         margin: 0 auto;
         text-align: center;
-    }
-
-    .about__wrap img {
-        display: none;
     }
 
     /*------------------------------------------ FOOTER ------------------------------------------*/
