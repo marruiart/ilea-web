@@ -5,7 +5,8 @@
 let onoff = true;
 function displayMenu() {
     let menuIcon = document.getElementById("menu_icon"),
-        childDiv = menuIcon.getElementsByTagName("div")[1];
+    childDiv = menuIcon.getElementsByTagName("div")[1];
+
     if (onoff == true) {
         document.getElementById("nav_menu").style.display = "flex";
         document.getElementById("menu_icon").firstElementChild.style.transform = "rotate(45deg)";
