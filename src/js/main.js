@@ -23,7 +23,6 @@ function displayMenu() {
 }
 
 window.onload = function () {
-
     let menuIcon = document.getElementById("menu_icon");
     menuIcon.addEventListener("click", displayMenu);
 };
