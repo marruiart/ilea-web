@@ -1138,13 +1138,13 @@ footer a:hover {
     }
 
     section.about {
-        grid-row: 3;
+        grid-row: 2;
         grid-column: span 12;
         /**/
     }
 
     section.services {
-        grid-row: 2;
+        grid-row: 3;
         grid-column: span 12;
         /**/
     }
@@ -1471,25 +1471,15 @@ footer a:hover {
 
     /*------------------------------------------ ABOUT ------------------------------------------*/
 
-    .about {
-        background-color: var(--light);
-        /**/
-        margin-bottom: 20rem;
-    }
+.about::before {
+    display: none;
+}
 
-    .about::after {
-        position: absolute;
-        content: '';
-        display: block;
-        background-image: none;
-        /**/
-        background: var(--light);
-        /**/
-        background: linear-gradient(180deg, rgba(210, 200, 224, 1) 0%, rgba(210, 200, 224, 0) 100%);
-        /**/
+    .about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 20rem;
-        /**/
-        width: 100%;
     }
 
     .about__wrap {
